@@ -2,16 +2,16 @@
 # script for collatz conjecture
 # exercise week 3 
 
-n = (input("Please enter an integer:"))
-while n!= 1:
-  if  n % 2 == 0:
-    # this is an even number
-    n = n//2
-    print(n)
-   
 
-  elif (n % 2 == 1):
-    #this is an odd number
-    n = (n * 3) + 1
-    print (n)
-print("the final value of n is 1")
+n = int(input("Please enter an integer:"))
+while n!=1:
+    if n % 2 ==0: #while integer is differnt than 1 
+        n = n//2 #if the previous number is even, the next number is one half the previous number
+        print (n)
+    else: #else the next number is multiplied by 3 and added 1 
+      n = (n*3) +1
+      print (n) #the final result of the conjecture will always be one
+
+
+
+
